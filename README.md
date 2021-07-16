@@ -1,2 +1,2 @@
-# js---for-third-exam
+# js-for-third-exam
 project js

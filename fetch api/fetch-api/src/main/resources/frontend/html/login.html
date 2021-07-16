@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        JavaScript CRUD Example
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body style="text-align: center; margin-left: 60px; margin-bottom: 40px; margin-top: 50px; font-family: 'Cambria Math'">
+    <h1><center>JavaScript CRUD Example</center></h1>
+    <div class="container">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div style="margin-bottom: 20px">
+                <label>Name</label><label class="validation-error hide" id="fullNameValidationError"></label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div style="margin-bottom: 20px">
+                <label>Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div style="margin-left: 210px" class="form-action-buttons">
+                <input class="btn btn-success" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <br/>
+    <div class="table table-hover">
+        <form action="form">
+            <table style="text-align: center; margin-left: 420px; margin-top: 40px; color: royalblue; width: 500px; font-family: 'Cambria Math' "border="1" cellpadding="5"; class="list" id="userList">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </form>
+    </div>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="../js/authorization.js"></script>
+</body>
+</html>
